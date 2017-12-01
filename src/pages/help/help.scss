@@ -1,3 +1,10 @@
 page-help {
-
+    .intro {
+        background-image: url('../assets/imgs/intro.jpg');
+    }
+    p {
+        color: rgb(165, 42, 79);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 40px;
+    }
 }

@@ -1,3 +1,4 @@
+import { ExamplesPage } from './../pages/examples/examples';
 import { HelpPage } from './../pages/help/help';
 import { NounPage } from './../pages/noun/noun';
 
@@ -12,13 +13,15 @@ import { MyApp } from './app.component';
 import { MenuPage } from '../pages/menu/menu';
 import { HomePage } from '../pages/home/home';
 
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     HelpPage,
     MenuPage,
-    NounPage
+    NounPage,
+    ExamplesPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { HomePage } from '../pages/home/home';
     HomePage,
     HelpPage,
     MenuPage,
-    NounPage
+    NounPage,
+    ExamplesPage
   ],
   providers: [
     StatusBar,
