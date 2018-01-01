@@ -27,6 +27,7 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    HomePage,
     HelpPage,
     MenuPage,
     NounPage
