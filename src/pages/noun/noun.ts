@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { NounPage } from '../noun/noun';
 
 /**
- * Generated class for the MenuPage page.
+ * Generated class for the NounPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,19 +10,16 @@ import { NounPage } from '../noun/noun';
 
 @IonicPage()
 @Component({
-  selector: 'page-menu',
-  templateUrl: 'menu.html',
+  selector: 'page-noun',
+  templateUrl: 'noun.html',
 })
-export class MenuPage {
+export class NounPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MenuPage');
+    console.log('ionViewDidLoad NounPage');
   }
-   noun(){
-     this.navCtrl.push(NounPage);
-   }
 
 }
