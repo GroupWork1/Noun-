@@ -14,13 +14,13 @@
 
 
 <ion-content padding>
-    <p class="noun"> What is a Noun?></p>
+
     <ion-card>
 
-        <img src="img/nin-live.png" />
+        <img src="../assets/imgs/noun1.jpg" />
         <ion-card-content>
             <ion-card-title>
-                Noun
+
             </ion-card-title>
 
         </ion-card-content>
@@ -29,7 +29,7 @@
     <!--  for difinition of noun  -->
     <ion-card>
         <ion-card-header>
-            Nouns
+            Noun
         </ion-card-header>
         <ion-card-content>
             <p>
@@ -37,5 +37,27 @@
             </p>
         </ion-card-content>
     </ion-card>
+
+    <ion-card class="example" *ngIf="magic">
+        <ion-card-header>
+            Summary
+        </ion-card-header>
+        <ion-card-content *ngIf="clicked">
+            <p>
+                <strong>Remember that the best way to find nouns in sentences is to ask who, what, and where- the 
+                    answers will usually point you towards the nouns. Also keep in mind that the majority of the time nouns 
+                    are things you can see and touch- car, bike, boy, dog, school, Mom, Sally, and Billy. However, there are 
+                    also times when intangible things can be nouns- time, love, hate, fear, guilt,
+                     passion, wind, air, satisfaction, quality, and so forth.</strong>
+            </p>
+
+        </ion-card-content>
+
+    </ion-card>
+    <ion-buttons>
+        <button ion-button full color="primary" round (click)="ToShow()">Summary </button>
+    </ion-buttons>
+
+    <button ion-button full color="primary" round (click)="exampls()">Examples Noun</button>
 
 </ion-content>

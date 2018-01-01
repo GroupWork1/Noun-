@@ -7,18 +7,19 @@
 <ion-header>
     <ion-navbar>
         <ion-title>
-            Noun Tutorial
+            NOUN TUTORIAL
         </ion-title>
     </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
-  <button ion-button>NOUNS</button>
-<button ion-button color="secondary">TYPES OF NOUNS</button>
-<button ion-button color="danger">VIDEOS</button>
   
-  
+    <ion-buttons class="but">
+        <button ion-button color="secondary" full round (click)="noun()">NOUNS</button>
+        <button ion-button color="secondary" full round>TYPES OF NOUNS</button>
+        <button ion-button color="DEFAULT" full round>VIDEOS TO ENHANCE COMPREHENSION</button>
+        <button ion-button color="light" full round>EXERCISE </button>
 
-    <button ion-button color="light" outline (click)="noun()">Light Outline</button>
+    </ion-buttons>
 </ion-content>
