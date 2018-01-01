@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NounPage } from '../noun/noun';
 
 /**
  * Generated class for the MenuPage page.
@@ -21,5 +22,8 @@ export class MenuPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuPage');
   }
+   noun(){
+     this.navCtrl.push(NounPage);
+   }
 
 }

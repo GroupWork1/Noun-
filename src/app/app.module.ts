@@ -1,3 +1,4 @@
+import { NounPage } from './../pages/noun/noun';
 import { HelpPage } from './../pages/help/help';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -14,7 +15,8 @@ import { MenuPage } from '../pages/menu/menu';
     MyApp,
     HomePage,
     HelpPage,
-    MenuPage
+    MenuPage,
+    NounPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { MenuPage } from '../pages/menu/menu';
     MyApp,
     HomePage,
     HelpPage,
-    MenuPage
+    MenuPage,
+    NounPage
   ],
   providers: [
     StatusBar,
