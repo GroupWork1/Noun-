@@ -1,3 +1,4 @@
+import { ExercisePage } from './../exercise/exercise';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NounPage } from '../noun/noun';
@@ -24,6 +25,10 @@ export class MenuPage {
   }
    noun(){
      this.navCtrl.push(NounPage);
+   }
+
+   exercise(){
+     this.navCtrl.push(ExercisePage);
    }
 
 }
