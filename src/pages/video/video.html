@@ -33,9 +33,11 @@
     <div [ngSwitch]="pet">
         <ion-list *ngSwitchCase="'Video1'">
             <ion-item>
-                <ion-thumbnail item-start>
-                    <img src="img/thumbnail-puppy-1.jpg">
-                </ion-thumbnail>
+                <ion-card class="video">
+                    <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer" width="100%" height="50%">
+               <source src="../assets/English.mp4" type="video/mp4" />
+              </video>
+                </ion-card>
                 <h2>Marfo</h2>
             </ion-item>
             ...
