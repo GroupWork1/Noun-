@@ -12,6 +12,7 @@ import { MyApp } from './app.component';
 
 import { MenuPage } from '../pages/menu/menu';
 import { HomePage } from '../pages/home/home';
+import { ExercisePage } from '../pages/exercise/exercise';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HomePage } from '../pages/home/home';
     HelpPage,
     MenuPage,
     NounPage,
-    ExamplesPage
+    ExamplesPage,
+    ExercisePage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { HomePage } from '../pages/home/home';
     HelpPage,
     MenuPage,
     NounPage,
-    ExamplesPage
+    ExamplesPage,
+    ExercisePage
   ],
   providers: [
     StatusBar,
