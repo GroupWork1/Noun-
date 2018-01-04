@@ -1,3 +1,4 @@
+import { VideoPage } from './../video/video';
 import { ExercisePage } from './../exercise/exercise';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -29,6 +30,10 @@ export class MenuPage {
 
    exercise(){
      this.navCtrl.push(ExercisePage);
+   }
+
+   video(){
+     this.navCtrl.push(VideoPage);
    }
 
 }
