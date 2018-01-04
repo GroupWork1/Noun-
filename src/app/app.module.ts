@@ -1,3 +1,4 @@
+import { VideoPage } from './../pages/video/video';
 import { ExamplesPage } from './../pages/examples/examples';
 import { HelpPage } from './../pages/help/help';
 import { NounPage } from './../pages/noun/noun';
@@ -23,7 +24,8 @@ import { ExercisePage } from '../pages/exercise/exercise';
     MenuPage,
     NounPage,
     ExamplesPage,
-    ExercisePage
+    ExercisePage,
+    VideoPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { ExercisePage } from '../pages/exercise/exercise';
     MenuPage,
     NounPage,
     ExamplesPage,
-    ExercisePage
+    ExercisePage,
+    VideoPage
   ],
   providers: [
     StatusBar,
