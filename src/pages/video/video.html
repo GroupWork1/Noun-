@@ -17,34 +17,85 @@
     <div padding>
         <ion-segment [(ngModel)]="pet">
             <ion-segment-button value="Video1">
-                Kittens
+                Video1
             </ion-segment-button>
-            <ion-segment-button value="puppies">
-                Puppies
+            <ion-segment-button value="Video2">
+                Video2
+            </ion-segment-button>
+
+            <ion-segment-button value="Video3">
+                Video3
             </ion-segment-button>
         </ion-segment>
+
     </div>
 
     <div [ngSwitch]="pet">
-        <ion-list *ngSwitchCase="'puppies'">
+        <ion-list *ngSwitchCase="'Video1'">
             <ion-item>
-                <ion-thumbnail item-start>
-                    <img src="img/thumbnail-puppy-1.jpg">
-                </ion-thumbnail>
-                <h2>Ruby</h2>
+                <ion-card class="video">
+                    <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer" width="100%" height="50%">
+               <source src="../assets/English.mp4" type="video/mp4" />
+              </video>
+                </ion-card>
+                <h2>Marfo</h2>
             </ion-item>
             ...
         </ion-list>
 
-        <ion-list *ngSwitchCase="'kittens'">
+        <ion-list *ngSwitchCase="'Video2'">
             <ion-item>
-                <ion-thumbnail item-start>
-                    <img src="img/thumbnail-kitten-1.jpg">
-                </ion-thumbnail>
-                <h2>Luna</h2>
+                <ion-card class="video">
+                    <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer" width="100%" height="50%">
+               <source src="../assets/Noun4Kid.mp4.mp4" type="video/mp4" />
+              </video>
+                </ion-card>
+                <h2>Noun</h2>
             </ion-item>
-            ...
+
         </ion-list>
+
+        <ion-list *ngSwitchCase="'Video3'">
+            <ion-item>
+                <ion-card class="video">
+                    <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer" width="100%" height="50%">
+               <source src="../assets/WhatNoun.mp4.mp4" type="video/mp4" />
+              </video>
+                </ion-card>
+                <h2>What is a noun</h2>
+            </ion-item>
+
+        </ion-list>
+
+    </div>
+
+    <div [ngSwitch]="pet">
+        <ion-list *ngSwitchCase="'Video2'">
+            <ion-item>
+                <<ion-card class="video">
+                    <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer" width="100%" height="50%">
+               <source src="../assets/Son.mp4" type="video/mp4"/>
+              </video>
+                    </ion-card>
+                    <h2>Noun Song</h2>
+            </ion-item>
+
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'video1'">
+            <ion-item>
+                <ion-card class="video">
+                    <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer" width="100%" height="50%">
+               <source src="../assets/NounSong.mp4.mp4" type="video/mp4" />
+              </video>
+                </ion-card>
+                <h2>Noun Song</h2>
+            </ion-item>
+
+        </ion-list>
+
+
+
     </div>
 
 
