@@ -65,8 +65,9 @@ export class HelpPage {
     showAlert() {
       let alert = this.alertCtrl.create({
         title: 'Developers',
-        subTitle: '<img src="../assets/imgs/cmN.jpg" /> <p>A Project work by Final year students in Valley View University- B.Ed IT </p>',
+        subTitle: '<ion-list><ion-item> <ion-thumbnail item-center>  <img src="../assets/imgs/cmN.jpg" />  </ion-thumbnail></ion-item></ion-list> <p>A Project work by Final year students in Valley View University- B.Ed IT </p>',
         
+
         buttons: ['OK']
       });
       alert.present();
@@ -75,11 +76,10 @@ export class HelpPage {
     showCall() {
       let alert = this.alertCtrl.create({
         title: 'Developers',
-        subTitle: '<ion-thumbnail item-star><img src="../assets/imgs/cmN.jpg" />  </ion-thumbnail> <a href="Tel:077665">call</a> ',
+        subTitle: ' <a href="Tel:077665">call</a> ',
     
         
-        
-        buttons: ['Call']
+       // buttons: ['Call']
       });
       alert.present();
     }
