@@ -1,3 +1,5 @@
+import { CountableNounPage } from './../pages/countable-noun/countable-noun';
+import { ImproperNounPage } from './../pages/improper-noun/improper-noun';
 import { TypesPage } from './../pages/types/types';
 import { VideoPage } from './../pages/video/video';
 import { ExamplesPage } from './../pages/examples/examples';
@@ -15,6 +17,9 @@ import { MyApp } from './app.component';
 import { MenuPage } from '../pages/menu/menu';
 import { HomePage } from '../pages/home/home';
 import { ExercisePage } from '../pages/exercise/exercise';
+import { ProperNounPage } from '../pages/proper-noun/proper-noun';
+import { CommonNounPage } from '../pages/common-noun/common-noun';
+import { UncountableNounPage } from '../pages/uncountable-noun/uncountable-noun';
 
 
 @NgModule({
@@ -27,7 +32,13 @@ import { ExercisePage } from '../pages/exercise/exercise';
     ExamplesPage,
     ExercisePage,
     VideoPage,
-    TypesPage
+    TypesPage,
+    ProperNounPage,
+    ImproperNounPage,
+    CommonNounPage,
+    CountableNounPage,
+    UncountableNounPage
+
   ],
   imports: [
     BrowserModule,
@@ -43,7 +54,13 @@ import { ExercisePage } from '../pages/exercise/exercise';
     ExamplesPage,
     ExercisePage,
     VideoPage,
-    TypesPage
+    TypesPage,
+    ProperNounPage,
+    ImproperNounPage,
+    CommonNounPage,
+    CountableNounPage,
+    UncountableNounPage
+
   ],
   providers: [
     StatusBar,

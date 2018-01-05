@@ -11,7 +11,7 @@
     </ion-navbar>
 
 </ion-header>
-<ion-content>
+<ion-content padding>
 
 
     <!--  for difinition of noun  -->
@@ -34,7 +34,10 @@
         </ion-card-content>
     </ion-card>
 
+    <ion-list>
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)"> {{ item }} </button>
+    </ion-list>
 
-    <ion-content padding>
 
-    </ion-content>
+
+</ion-content>
