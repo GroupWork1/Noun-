@@ -1,9 +1,31 @@
-<head>
-    <title>Introduction </title>
-</head>
+<ion-header>
+
+    <ion-navbar>
+
+        <ion-buttons end>
+            <button ion-button icon-only (click)="showPrompt()" class="pp">
+                        <ion-icon name="md-chatboxes" ></ion-icon>
+                    </button>
+
+
+            <button ion-button icon-only (click)="showAlert()">
+                    <ion-icon name="ios-people-outline"></ion-icon>
+                                </button>
+
+            <button ion-button icon-only (click)=" showCall()">
+                                        <ion-icon name="md-call"></ion-icon>
+                                    </button>
+
+        </ion-buttons>
+        <ion-title>Introduction </ion-title>
+    </ion-navbar>
+
+</ion-header>
+
 
 <ion-content padding class="intro">
 
     <P>GROUP ONE'S APP </P>
+    <p> A Noun Tutor to build the Grammar of Students</p>
 
 </ion-content>

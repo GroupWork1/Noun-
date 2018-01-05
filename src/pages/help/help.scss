@@ -1,10 +1,11 @@
 page-help {
     .intro {
-        //background-image: url('../assets/imgs/intro.jpg');
+        background-image: url('../assets/imgs/nouns.jpg');
+        backface-visibility: visible;
         color: rgb(245, 246, 248);
     }
     p {
-        color: rgb(126, 42, 165);
+        color: rgba(250, 12, 52, 0.986);
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 40px;
         font-style: italic
