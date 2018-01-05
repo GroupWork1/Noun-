@@ -1,3 +1,4 @@
+import { TypesPage } from './../types/types';
 import { VideoPage } from './../video/video';
 import { ExercisePage } from './../exercise/exercise';
 import { Component } from '@angular/core';
@@ -34,6 +35,11 @@ export class MenuPage {
 
    video(){
      this.navCtrl.push(VideoPage);
+   }
+
+   TypeNoun(){
+
+    this.navCtrl.push(TypesPage);
    }
 
 }
