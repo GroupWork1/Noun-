@@ -131,5 +131,23 @@
         </ion-list>
     </form>
 
+ <!--question three -->
+ <form (submit)="doSubmit($event)" [formGroup]="langForm">
+        <ion-list radio-group formControlName="langs">
 
+            <h2>(5) Jackson is a common noun.
+            </h2>
+
+            <ion-item>
+                <ion-label>True</ion-label>
+                <ion-radio value="r5" checked="true" (ionSelect)="radio5()"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Fales</ion-label>
+                <ion-radio value=" r2 " (ionSelect)="radio6()"></ion-radio>
+            </ion-item>
+
+
+        </ion-list>
+        </form>
 </ion-content>
