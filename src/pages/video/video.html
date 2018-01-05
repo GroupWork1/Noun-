@@ -45,19 +45,23 @@
 
         <ion-list *ngSwitchCase="'Video2'">
             <ion-item>
-                <ion-thumbnail item-start>
-                    <img src="img/thumbnail-kitten-1.jpg">
-                </ion-thumbnail>
-                <h2>Luna</h2>
+                <ion-card class="video">
+                    <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer" width="100%" height="50%">
+               <source src="../assets/Noun4Kid.mp4.mp4" type="video/mp4" />
+              </video>
+                </ion-card>
+                <h2>Noun</h2>
             </ion-item>
-            ...
+
         </ion-list>
 
         <ion-list *ngSwitchCase="'Video3'">
             <ion-item>
-                <ion-thumbnail item-start>
-                    <img src="img/thumbnail-puppy-1.jpg">
-                </ion-thumbnail>
+                <ion-card class="video">
+                    <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer" width="100%" height="50%">
+               <source src="../assets/WhatNoun.mp4.mp4" type="video/mp4" />
+              </video>
+                </ion-card>
                 <h2>Ruby</h2>
             </ion-item>
             ...
@@ -68,20 +72,24 @@
     <div [ngSwitch]="pet">
         <ion-list *ngSwitchCase="'Video2'">
             <ion-item>
-                <ion-thumbnail item-start>
-                    <img src="img/thumbnail-puppy-1.jpg">
-                </ion-thumbnail>
-                <h2>Ruby</h2>
+                <<ion-card class="video">
+                    <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer" width="100%" height="50%">
+               <source src="../assets/Son.mp4" type="video/mp4"/>
+              </video>
+                    </ion-card>
+                    <h2>Noun Song</h2>
             </ion-item>
             ...
         </ion-list>
 
         <ion-list *ngSwitchCase="'video1'">
             <ion-item>
-                <ion-thumbnail item-start>
-                    <img src="img/thumbnail-kitten-1.jpg">
-                </ion-thumbnail>
-                <h2>Luna</h2>
+                <ion-card class="video">
+                    <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer" width="100%" height="50%">
+               <source src="../assets/NounSong.mp4.mp4" type="video/mp4" />
+              </video>
+                </ion-card>
+                <h2>Noun Song</h2>
             </ion-item>
             ...
         </ion-list>
